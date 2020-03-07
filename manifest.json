@@ -1,0 +1,19 @@
+{ "manifest_version": 2,
+    "name": "RaterFox", 
+    "description": "The most popular movies and TV shows in your   default tab. Includes ratings, summaries and the ability to watch trailers.", 
+    "version": "2",
+    "author": "udhaya kumar",
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["animals.js"]
+        }
+    ],
+     "permissions": ["activeTab", "storage", "declarativeContent"]
+}
